@@ -10,7 +10,7 @@ $res=mysqli_query($connection,$q);
 echo mysqli_error($connection);
  header('Refresh:0; url="kalinga.php"');
 echo '<script language="javascript">';
-echo 'alert("emergency in the location")';
+echo 'alert("emergency in the location kadiri")';
 echo '</script>';
 
 ?>

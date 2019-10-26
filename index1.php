@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <style>
+        body{
+            background-color:aquamarine;
+        }
         *{
             margin: 0;
             padding: 0;
@@ -56,7 +59,7 @@
             vertical-align: middle;
             color:white;
         }
-        .head{
+        .hello{
              width:200px;
             height:100px;
             background-color: rgba(0,0,0,0.5);
@@ -92,10 +95,10 @@
         .may2{
             color:antiquewhite;
         }
-        .head input[type="submit"]{
+        .hello input[type="submit"]{
            background-color:red;
         }
-        .head2 input[type="submit"]{
+        .hello input[type="submit"]{
            background-color:red;
         }
         .hyper input[type="submit"]{
@@ -103,7 +106,7 @@
         }
         .hyper{
               width:500px;
-            height:500px;
+            height:200px;
             background-color: rgba(0,0,0,0.5);
             margin:0 auto;
             margin-top: 40px;
@@ -123,10 +126,12 @@
            <h1>life<span>SAVER</span></h1>
            </div>
         <ul class="navigation">
-             <a> <li><?php 
+              <a href="index5.php"><li>logout</li></a>
+               <a> <li><?php 
 session_start();
 echo"Hello".$_SESSION['username'];
 ?></li></a>
+           
             <a href="index1.php"><li>contact</li></a>
             <a href="index2.php"><li>updates</li></a>
             <a href="index3.php"><li>about us</li></a>
@@ -140,7 +145,7 @@ echo"Hello".$_SESSION['username'];
         <div class="hello">
         <br><br>
          <form action="details.php" method="post">
-             <input type="text" name="pq" placeholder="search by username.."/><br><br>
+             <input type="text" name="pq" placeholder="search by location.."/><br><br>
              <input type="submit" value="submit">
          </form>
      </div>
