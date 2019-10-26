@@ -33,7 +33,7 @@ while($rows=mysqli_fetch_array($re)){
      echo "<td>";
     echo "
     <form action='questions.php' method='POST'>
-    <input type='submit' name='$a' value='submit' >
+    <input type='submit' name='$a' value='submit'>
     </form>";
     echo "</td>";
     echo "<br/>";
